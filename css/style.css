@@ -1,0 +1,45 @@
+/* este comentario sirve para ambos archivos */
+.section {
+  width: 100%;
+  height: 600px;
+  background: #bc4e9c;
+  background: linear-gradient(to right, red, violet); }
+  .section .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
+    .section .container .row {
+      background-color: #723872;
+      margin: 1rem;
+      padding: 2rem; }
+      .section .container .row .section-tittle .padd-15 {
+        color: black;
+        font-size: 2rem;
+        text-align: center; }
+      .section .container .row .row {
+        text-align: center;
+        font-weight: 500;
+        color: black; }
+      .section .container .row .about-text .padd-15 {
+        background-color: #dfafdf;
+        display: flex;
+        justify-content: center; }
+        .section .container .row .about-text .padd-15 ul li {
+          background-color: violet;
+          list-style: none; }
+
+.contact form {
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  background-color: violet;
+  list-style: none; }
+  .contact form .form-group {
+    color: black;
+    font-size: 2rem;
+    text-align: center; }
+  .contact form .form-item {
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+    height: 200%; }

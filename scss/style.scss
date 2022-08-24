@@ -1,0 +1,63 @@
+// linea de comentario
+/* este comentario sirve para ambos archivos */
+
+@import "utilities/variables";
+
+// primer poder de sass: NESTING
+.section{
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: linear-gradient(to right, red, violet);
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        .row{
+            background-color: $color-principal;
+            margin: 1rem;
+            padding: 2rem;
+            .section-tittle .padd-15{
+                color: $color-tipografia;
+                font-size: 2rem;
+                text-align: center;
+            }
+            .row{
+                text-align: center;
+                font-weight: 500;
+                color: $color-tipografia;
+            }
+            .about-text .padd-15{
+                background-color: $color-secundario;
+                display: flex;
+                justify-content: center;
+                ul{
+                    li{
+                        background-color: $color-botones;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact form{
+    text-align: center;
+    font-weight: 500;
+    color: $color-tipografia;
+    background-color: $color-botones;
+    list-style: none;
+    .form-group{
+        color: $color-tipografia;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .form-item{
+        text-align: center;
+        font-weight: 300;
+        width: 100%;
+        height: 200%;
+    }
+}
+
